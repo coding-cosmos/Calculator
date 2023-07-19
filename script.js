@@ -30,3 +30,19 @@ function operate(firstNum,secondNum,operator){
         case "/": return divide(firstNum,secondNum);
     }
 }
+
+
+const  display = document.querySelector(".display");
+display.textContent = "0";
+let prevContent ="";
+
+// add click event listener to each value btn;
+const values = document.querySelectorAll(".valueBtn");
+values.forEach((value)=>{
+    value.addEventListener("click",displayValue);
+})
+
+function displayValue(){
+display.textContent =`${prevContent}${this.textContent}`;
+  prevContent = display.textContent;
+}
