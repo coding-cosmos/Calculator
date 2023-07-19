@@ -16,4 +16,16 @@ function division(a, b) {
 function multiply(a, b) {
   return a * b;
 }
-console.log(division(5,0));
+
+let firstNum;
+let secondNum;
+let operator;
+
+function operate(firstNum,secondNum,operator){
+    switch(operator){
+        case "+": return add(firstNum,secondNum);
+        case "-": return subtract(firstNum,secondNum);
+        case "*": return multiply(firstNum,secondNum);
+        case "/": return divide(firstNum,secondNum);
+    }
+}
