@@ -92,7 +92,7 @@ equal.addEventListener("click", () => {
   let index = 0;
 
   while (numbers.length !== 2) {
-    if (index === 3) {
+    if (index === 4) {
       break;
     }
     numbers = displayValue.split(op[index++]);
